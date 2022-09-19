@@ -1,0 +1,11 @@
+n = int(input())
+def fib(n):
+    a = 1
+    b = 1
+    c = 2
+    while c <= n:
+        if n == a or n == b or n == c:
+            return print('Число Фибоначчи')
+        c, b, a = b+c, c, a
+    print('Не число Фибоначчи')
+fib(n)
